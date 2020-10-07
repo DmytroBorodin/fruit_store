@@ -20,3 +20,18 @@ closeBtn.addEventListener('click', () => {
 	popup.classList.remove('active');
 	body.classList.remove('locked');
 });
+
+burgerBtn.addEventListener('touchend', () => {
+	popup.classList.add('active');
+	body.classList.add('locked');
+});
+
+closeBlock.addEventListener('touchend', () => {
+	popup.classList.remove('active');
+	body.classList.remove('locked');
+});
+
+closeBtn.addEventListener('touchend', () => {
+	popup.classList.remove('active');
+	body.classList.remove('locked');
+});
