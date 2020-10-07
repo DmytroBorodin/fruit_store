@@ -33,6 +33,10 @@ body {
 	position: relative;
 	background-color: #FAFAFA;
 	height: 100vh;
+	overflow: scroll;
+}
+body.locked {
+	overflow: hidden;
 }
 .container {
 	width: 1140px;
@@ -42,6 +46,59 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+
+/*App menu*/
+
+.menu-popup {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: -200%;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 2;
+	transition: all 0.3s ease;
+}
+.menu-popup.active {
+	left: 0;
+}
+.app-menu {
+	padding: 70px 48px 0 48px;
+	width: 320px;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.app-menu-section {
+	margin-bottom: 72px;
+}
+.app-menu-item {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s ease;
+}
+.app-menu-item:hover{
+	color: #000;
+}
+.app-menu-item:active {
+	color: #000;
+}
+.app-menu-item span {
+		display: block;
+		font-size: 22px;
+		margin-right: 10px;
+		width: 28px;
+	}
+.close-block {
+	width: calc(100% - 320px);
+	height: 100%;
 }
 
 /*Header*/
@@ -114,7 +171,6 @@ input {
 /*Main*/
 main {
 	margin-top: 3rem;
-	overflow: scroll;
 	padding-bottom: 6.5rem;
 }
 .mr-1 {
@@ -320,9 +376,57 @@ footer span.active {
 		font-size: 9px;
 	}
 	.container {
-		width: 310px;
+		width: 290px;
 	}
 	.r-1 {
 	    padding-top: 35px;
+	}
+	.app-menu {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.app-menu .close-btn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 15px;
+		height: 15px;
+	}
+	.app-menu .close-btn .close-span {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	.app-menu .close-btn .close-span:before, .close-span:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 2px;
+		background-color: #000;
+		border-radius: 1px;
+	}
+	.app-menu .close-btn .close-span:before {
+		transform: rotate(-45deg);
+	}
+	.app-menu .close-btn .close-span:after {
+		transform: rotate(45deg);
+	}
+	.app-menu-section {
+		width: 100%;
+		.app-menu-item {
+			justify-content: center;
+		}
+	}
+	.close-block {
+		width: 0;
 	}
 }
