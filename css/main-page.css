@@ -81,27 +81,30 @@ main {
 	transform: translate(-50%, -50%) rotate(90deg);
 }
 @media screen and (max-width: 992px){
-	.product-card {
-		width: 45%;
+	.product-card-block {
 		padding: 2rem;
 		margin-bottom: 10%;
+		width: 45%;
+	}
+	.product-card {
+		width: 100%;
+	}
+	.card-main-img {
+		width: 60%;
+		margin: 0 auto 3rem;
 	}
 }
 @media screen and (max-width: 767px){
 	.product-card {
-		width: 47.65%;
-		padding: 2rem;
-		margin-bottom: 4.7%;
+		width: 100%;
 	}
 	.card-main-img {
-	    width: 50%;
-	    margin: 0 auto 5rem;
+	    width: 70%;
 	}
 }
 @media screen and (max-width: 576px){
 	.product-card {
-		width: 47.65%;
-		padding: 1rem
+		width: 100%;
 	}
 	.card-main-img {
 	    width: 67.1%;
