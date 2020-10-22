@@ -1,0 +1,273 @@
+.r-1 button{
+	background-color: #fff;
+	border-radius: 1rem;
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	font-size: 2.4rem;
+}
+.r-1 button img {
+	height: 2.4rem;
+	margin: auto;
+}
+.cart-button {
+	margin: 0;
+}
+.cart-title {
+	font-size: 3rem;
+	font-weight: 400;
+}
+.full-cart {
+	display: none;
+	position: absolute;
+	width: 0.7rem;
+	height: 0.7rem;
+	background-color: #FF6F00;
+	border-radius: 50%;
+	top: 30%;
+	right: 22%;
+}
+main {
+	margin-top: 6.2rem;
+}
+.cart-product-card {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	margin-bottom: 6rem;
+}
+.card-img-block {
+	width: 12.4rem;
+	height: 12.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 0.8rem;
+}
+.card-img {
+	width: 80%;
+}
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 78%;
+}
+.card-price-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.card-price {
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+}
+.item-name {
+	margin-bottom: 0.5rem;
+}
+.item-counter {
+	display: flex;
+	align-items: center;
+}
+.minus, .plus {
+	width: 2.6rem;
+	height: 2.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.3rem;
+	font-size: 2rem;
+}
+.minus {
+	border: 1px solid #FF6F00;
+	background-color: #fff;
+}
+.minus:before {
+	content: '';
+	display: block;
+	width: 0.8rem;
+	height: 0.1rem;
+	border-radius: 0.05rem;
+	background-color: #FF6F00;
+}
+.plus:before, .plus:after {
+	content: '';
+	display: block;
+	width: 0.8rem;
+	height: 0.1rem;
+	background-color: #fff;
+	border-radius: 0.05rem;
+}
+.plus:before {
+	transform: translateX(50%)
+}
+.plus:after {
+	transform: translateX(-50%) rotate(-90deg) ;
+}
+.counter {
+	display: block;
+	font-size: 2rem;
+	margin: 0 1.2rem;
+}
+.plus {
+	background-color: #FF6F00;
+	color: #fff;
+}
+.card-btns-block {
+	display: flex;
+	justify-content: space-between;
+}
+.card-btns-block img {
+	height: 2.2rem;
+	margin-right: 1rem;
+	margin-bottom: 0.2rem;
+}
+.remove, .order {
+	height: 5.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	border-radius: 0.8rem;
+}
+.remove {
+	background-color: #fff;
+	width: 45.2%;
+}
+.order {
+	background-color: #FF6F00;
+	color:#fff;
+	width: 50.43%;
+}
+.price-block {
+	margin-top: 8.1rem;
+}
+.price-text {
+	margin-top: 0.5rem;
+	font-size: 2rem;
+	line-height: 2.8rem;
+	display: flex;
+	justify-content: space-between;
+}
+.price-border-block {
+	margin: 2.3rem 0 1.5rem;
+}
+.price-border-block img {
+	width: 100%;
+	margin: auto;
+}
+.main-btn {
+	width: 100%;
+	height: 10rem;
+	font-size: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FF6F00;
+	color:#fff;
+	margin-top: 5rem;
+	border-radius: 1rem;
+	margin-bottom: 13.2rem;
+}
+
+.cart-product-card.disable {
+	display: none;
+}
+@media screen and (max-width: 992px) {
+	.card-img-block {
+		width: 10.4rem;
+		height: 10.4rem;
+	}
+	.card-price {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+	}
+	.card-price {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+	}
+	.minus:before {
+		width: 0.7rem;
+		height: 0.125rem;
+	}
+	.counter {
+		font-size: 1.4rem;
+		margin: 0 0.6rem;
+	}
+	.remove, .order {
+		height: 4.6rem;
+		font-size: 1.4rem;
+		border-radius: 0.8rem;
+	}
+	.card-btns-block img {
+		height: 2rem;
+	}
+	.price-text {
+		margin-top: 0.5rem;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+	}
+	.price-border-block {
+		margin: 2.3rem 0 1.5rem;
+	}
+	.main-btn {
+		width: 100%;
+		height: 7rem;
+		font-size: 1.8rem;
+	}
+}
+@media screen and (max-width: 767px) {
+	.card-img-block {
+		width: 7.4rem;
+		height: 7.4rem;
+		border-radius: 0.8rem;
+	}
+	.card-price {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+	.item-name {
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+	}
+	.counter {
+		font-size: 1.0rem;
+		margin: 0 0.6rem;
+	}
+	.remove, .order {
+		height: 3.6rem;
+		font-size: 1.2rem;
+		border-radius: 0.8rem;
+	}
+	.card-btns-block img {
+		height: 1.8rem;
+		margin-right: 0.6rem;
+	}
+	.item-name {
+		margin-bottom: 0rem;
+	}
+}
+@media screen and (max-width: 576px) {
+	.card-body {
+		width: 72%;
+	}
+	.r-1 button{
+		background-color: #fff;
+		border-radius: 1rem;
+		width: 4rem;
+		height: 4rem;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+	.r-1 button img {
+		height: 1.6rem;
+	}
+	.cart-title {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	main {
+		margin-top: 3.2rem;
+	}
+}

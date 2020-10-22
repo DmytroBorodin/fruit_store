@@ -1,0 +1,57 @@
+.r-1 button{
+	background-color: #fff;
+	border-radius: 1rem;
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	font-size: 2.4rem;
+}
+.r-1 button img {
+	height: 2.4rem;
+	margin: auto;
+}
+.r-1 form {
+	width: 85%;
+	position: relative;
+}
+.icon-search {
+	position: absolute;
+	top: 50%;
+	left: 2rem;
+	transform: translateY(-50%);
+	font-size: 1.5rem;
+}
+input {
+	width: 100%;
+}
+.search-input {
+	font-size: 1.6rem;
+	line-height: 1.7rem;
+	font-weight: 300;
+	background-color: #FFFFFF;
+	padding: 2.25rem 2rem 2.25rem 5rem;
+	border-radius: 1rem;
+}
+.search-input::placeholder {
+	color: #B5B5B5;
+	font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+	.r-1 button{
+		background-color: #fff;
+		border-radius: 1rem;
+		width: 4rem;
+		height: 4rem;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+	.r-1 button img {
+		height: 1.6rem;
+	}
+	.search-input {
+		font-size: 1.4rem;
+		line-height: 1.5rem;
+		padding: 1.75rem 1.6rem 1.75rem 4.4rem;
+		border-radius: 1rem;
+	}
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cart</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fonts/icons-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cart_page.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <header>
+        	<div class="container">
+        		<div class="row r-1">
+        			<button class="menu-btn">
+                        <span class="icon-Menu-Bar"></span>
+                    </button>
+        			<h3 class="cart-title">
+        				My Cart Items
+        			</h3>
+        			<button class="cart-button">
+        				<span class="icon-cart"></span>
+        				<span class="full-cart"></span>
+        			</button>
+        		</div>
+        	</div>
+        </header>
+        <div class="menu-popup">
+            <div class="app-menu">
+                <div class="close-btn">
+                    <span class='close-span'></span>
+                </div>
+                <div class="app-menu-section">
+                    <a href="#" class="app-menu-item">
+                        Home
+                    </a>
+                    <a href="#" class="app-menu-item">
+                        Categories
+                    </a>
+                    <a href="#" class="app-menu-item">
+                        Products
+                    </a>
+                    <a href="#" class="app-menu-item">
+                        Past Orders
+                    </a>
+                    <a href="cart-page.html" class="app-menu-item">
+                        Cart
+                    </a>
+                    <a href="#" class="app-menu-item">
+                        Profile
+                    </a>
+                </div>
+            </div>
+            <div class="close-block"></div>
+        </div>
+        <main>
+        	<div class="container">
+        		<div class="cart-product-card">
+        			<div class="card-img-block">
+        				<img src="imgs/main-img1.png" alt="" class="card-img">
+        			</div>
+	        		<div class="card-body">
+	        			<div class="card-price-block">
+	        				<div class="card-price">
+	        					<p class="item-name">
+	        						Pomegranate
+	        					</p>
+	        					<p class="item-price">
+	        						$4.21
+	        					</p>
+	        				</div>
+	        				<div class="item-counter">
+	        					<button class="minus">
+	        					</button>
+	        					<span class="counter">0</span>
+	        					<button class="plus">
+	        					</button>
+	        				</div>
+	        			</div>
+	        			<div class="card-btns-block">
+	        				<button class="remove">
+	        					<img src="imgs/Component 2 – 1.svg" alt="">
+	        					Remove
+	        				</button>
+	        				<button class='order'>Order now</button>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<div class="cart-product-card">
+        			<div class="card-img-block">
+        				<img src="imgs/main-img2.png" alt="" class="card-img">
+        			</div>
+	        		<div class="card-body">
+	        			<div class="card-price-block">
+	        				<div class="card-price">
+	        					<p class="item-name">
+	        						Orange Fruit
+	        					</p>
+	        					<p class="item-price">
+	        						$124.00
+	        					</p>
+	        				</div>
+	        				<div class="item-counter">
+	        					<button class="minus">
+	        						
+	        					</button>
+	        					<span class="counter">0</span>
+	        					<button class="plus">
+	        						
+	        					</button>
+	        				</div>
+	        			</div>
+	        			<div class="card-btns-block">
+	        				<button class="remove">
+	        					<img src="imgs/Component 2 – 1.svg" alt="">
+	        					Remove
+	        				</button>
+	        				<button class='order'>Order now</button>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<div class="cart-product-card">
+        			<div class="card-img-block">
+        				<img src="imgs/main-img3.png" alt="" class="card-img">
+        			</div>
+	        		<div class="card-body">
+	        			<div class="card-price-block">
+	        				<div class="card-price">
+	        					<p class="item-name">
+	        						Coconut Fruit
+	        					</p>
+	        					<p class="item-price">
+	        						$5.25
+	        					</p>
+	        				</div>
+	        				<div class="item-counter">
+	        					<button class="minus">
+	        						
+	        					</button>
+	        					<span class="counter">0</span>
+	        					<button class="plus">
+	        						
+	        					</button>
+	        				</div>
+	        			</div>
+	        			<div class="card-btns-block">
+	        				<button class="remove">
+	        					<img src="imgs/Component 2 – 1.svg" alt="">
+	        					Remove
+	        				</button>
+	        				<button class='order'>Order now</button>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<div class="price-block">
+	        		<p class="price-text">Subtotal<span id='subtotal'>$0</span></p>
+	        		<p class="price-text">Delivery Fee<span id='fee'>$0</span></p>
+	        		<p class="price-text">Tax<span id='tax'>$0</span></p>
+	        		<div class="price-border-block">
+	        			<img src="imgs/Path 72.svg" alt="">
+	        		</div>
+	        		<p class="price-text">Total Amount<span id='total-price'>$0</span></p>
+	        	</div>
+	        	<button class="main-btn">
+	        		Check Out Now
+	        	</button>
+        	</div>
+        </main>
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			<a href='index.html'><span class="icon-home- "></span></a>
+        			<a href='fav_products.html'><span class="icon-heart"></span></a>
+        			<a href='cart-page.html'><span class="icon-cart-fill active"></span></a>
+        			<a href='#'><span class="icon-user"></span></a>
+        		</div>	
+        	</div>
+        </footer>
+        <script src="js/cart_page.js"></script>
+        <script src='js/main.js'></script>
+    </body>
+</html>
